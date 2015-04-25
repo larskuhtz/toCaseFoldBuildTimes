@@ -34,13 +34,14 @@ import System.Process
 -- static parameters
 
 optimizationFlag ∷ IsString a ⇒ a
-optimizationFlag="-O"
+optimizationFlag="-O2"
 
 defaultVersions ∷ IsString a ⇒ [a]
 defaultVersions = ["7.6.3", "7.8.3", "7.10.1"]
 
 sizeList ∷ [Natural]
-sizeList = [1..10] <> [20]
+-- sizeList = [1..10] <> [20]
+sizeList = [1..4]
 
 app
     ∷ Natural

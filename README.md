@@ -5,6 +5,10 @@ also used in the
 [FoldCase](https://hackage.haskell.org/package/case-insensitive-1.2.0.4/docs/Data-CaseInsensitive.html#t:FoldCase)
 instance for `Data.Text.Text`.
 
+We found that there are very simple Haskell modules for which the compilation
+time is exponential in the number of calls to `Data.Text.toCaseFold` with
+GHC-7.6.3, GHC-7.8.3, and GHC-7.10.1.
+
 The code used for running the tests is [here](ToCaseFoldBuildTimes.hs).
 
 Simple Test
