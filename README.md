@@ -71,6 +71,12 @@ main = print
     $ "abc"
 ```
 
+With `-O0` the situation is similar as with the simple test above. The compilation time doesn't seem
+affected by the number of nested calls to `toCaseFold`.
+
+![Results with -O0](images/results-app1-O0.png?raw=true "Results with -O0")
+
+
 With `-O` the build times for GHC-7.8.3 and GHC-7.10.1 are exponential -- at least for `n ≤ 5` which is the the
 range that we tested. The build times with GHC-7.6.3 seem to even be factorial.
 
