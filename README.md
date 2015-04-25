@@ -80,10 +80,14 @@ affected by the number of nested calls to `toCaseFold`.
 
 ![Results with -O0](images/results-app1-O0.png?raw=true "Results with -O0")
 
-
 With `-O` the build times for GHC-7.8.3 and GHC-7.10.1 are exponential -- at least for `n ≤ 5` which is the the
 range that we tested. The build times with GHC-7.6.3 seem to even be factorial.
 
 ![Results with -O](images/results-app1-O.png?raw=true "Results with -O")
 
+Again, with `-O2` the situation similar to the `-O` case but the compilation times are
+much worse:
 
+![Results with -O2](images/results-app1-O2.png?raw=true "Results with -O2")
+
+The memory consumption for the the builds with optimization enabled was in the order of several GB.
