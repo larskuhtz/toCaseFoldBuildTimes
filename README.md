@@ -31,7 +31,7 @@ dominated by other factors and not the compilation of the `toCaseFold`
 statement. GHC-7.8.3 shows by far the worst build times. Build times with
 GHC-7.10.1 are almost back to where they are with GHC-7.6.3.
 
-![Results with -O0 (see below)](src/results-O0.png?raw=true "Results with -O0")
+![Results with -O0 (see below)](images/results-O0.png?raw=true "Results with -O0")
 
 With `-O` the build times scale linearly with the number of calls to
 `toCaseFold` for all three compiler versions, which indicates that the build
@@ -39,12 +39,12 @@ times are dominated by calls to `toCaseFold`. The linear factor is by far the
 smallest for GHC-7.6.3. The factor with GHC-7.10.1 is somewhat larger than with
 GHC-7.8.3.
 
-![Results with -O (see below)](src/results-O.png?raw=true "Results with -O")
+![Results with -O (see below)](images/results-O.png?raw=true "Results with -O")
 
 With `-O2` the situation similar to the `-O` case but the compilation times are
 much worse:
 
-![Results with -O2 (see below)](src/results-O2.png?raw=true "Results with -O2")
+![Results with -O2 (see below)](images/results-O2.png?raw=true "Results with -O2")
 
 Using `Data.Text.toLower` instead of `Data.Text.toCaseFold` reduces the build
 times considerably so that they scale constant in the number of calls to
