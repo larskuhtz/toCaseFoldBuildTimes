@@ -91,6 +91,6 @@ range that we tested. The build times with GHC-7.6.3 seem to even be factorial.
 Again, with `-O2` the situation similar to the `-O` case but the compilation times are
 much worse:
 
-![Results with -O2](images/results-app1-O2.png?raw=true "Results with -O2")
+![Results with -O2](images/results-app1-O2.2015-04-27.png?raw=true "Results with -O2")
 
 The memory consumption for the the builds with optimization enabled was in the order of several GB.
