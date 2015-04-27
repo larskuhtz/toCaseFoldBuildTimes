@@ -11,8 +11,8 @@ GHC-7.6.3, GHC-7.8.3, and GHC-7.10.1.
 
 The code used for running the tests is [here](ToCaseFoldBuildTimes.hs).
 
-The tests where performed on a Mac Book Pro with Mac OS X using the binary GHC builds
-from `ghc.haskell.org`.
+The tests where performed on a Mac Book Pro with Mac OS X using the binary GHC
+builds from `ghc.haskell.org`.
 
 Simple Test
 ===========
